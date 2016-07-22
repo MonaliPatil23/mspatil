@@ -1,0 +1,33 @@
+import java.util.*;
+import javax.swing.*;
+class Stock
+{
+
+ public static void main(String args[])
+ {
+   Vector v=new Vector(4,4);
+      v.addElement(new Integer(1));
+      v.addElement(new Integer(2));
+      v.addElement(new Integer(3));
+      v.addElement(new Integer(4));
+      
+
+      v.addElement(new String("abc"));
+      v.addElement(new String("xyz"));
+      v.addElement(new String("pqr"));
+      v.addElement(new String("lmn"));
+
+
+      v.addElement(new Integer(10));
+      v.addElement(new Integer(20));
+      v.addElement(new Integer(30));
+      v.addElement(new Integer(40));
+      
+
+      Enumeration vEnum = v.elements();
+      System.out.println("\nElements in vector:");
+      while(vEnum.hasMoreElements())
+      System.out.print(vEnum.nextElement() + " ");
+      System.out.println();
+  }
+}
